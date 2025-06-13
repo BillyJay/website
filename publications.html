@@ -20,46 +20,66 @@
         body {
             font-family: 'Roboto', Arial, sans-serif;
             margin: 0;
-            background: #181c2b;
-            color: #fff;
+            background: #1c2333;
+            background-image: 
+                radial-gradient(#eabe6c15 1px, transparent 1px),
+                radial-gradient(#eabe6c15 1px, transparent 1px);
+            background-size: 50px 50px;
+            background-position: 0 0, 25px 25px;
+            background-attachment: fixed;
+            color: #e8e1d3;
             line-height: 1.6;
         }
         header {
-            background: #23284a;
+            background: linear-gradient(to right, #233048, #1c2333);
             padding: 2rem 1rem;
             text-align: center;
-            border-bottom: 1px solid #5ef6ff;
+            border-bottom: 2px solid #eabe6c;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
         header h1 {
             margin: 0 0 1rem 0;
-            font-size: 2rem;
+            font-size: 2.5rem;
             font-weight: 700;
-            color: #fff;
+            color: #eabe6c;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            letter-spacing: 1px;
         }
         .nav-link {
             display: inline-block;
             margin: 0.5rem;
-            padding: 0.5rem 1rem;
-            color: #5ef6ff;
+            padding: 0.8rem 1.5rem;
+            color: #e8e1d3;
             text-decoration: none;
             font-weight: 400;
-            transition: color 0.2s;
+            background: rgba(234, 190, 108, 0.1);
+            border: 1px solid #eabe6c;
+            border-radius: 3px;
+            transition: all 0.3s ease;
         }
         .nav-link:hover {
-            color: #fff;
+            background: #eabe6c;
+            color: #1c2333;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         main {
             max-width: 800px;
             margin: 2rem auto;
-            padding: 0 1rem;
+            padding: 2rem;
+            background: rgba(28, 35, 51, 0.95);
+            border: 1px solid #eabe6c;
+            border-radius: 8px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
         }
         main h2 {
-            color: #5ef6ff;
-            font-size: 1.5rem;
+            color: #eabe6c;
+            font-size: 2rem;
             font-weight: 700;
             margin-bottom: 2rem;
-            border-bottom: 1px solid #5ef6ff;
+            border-bottom: 2px solid #eabe6c;
             padding-bottom: 0.5rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
         }
         main ul {
             list-style: none;
@@ -69,41 +89,60 @@
             display: flex;
             align-items: flex-start;
             margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: rgba(35, 48, 72, 0.6);
+            border: 1px solid rgba(234, 190, 108, 0.3);
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+        main li:hover {
+            background: rgba(35, 48, 72, 0.8);
+            border-color: #eabe6c;
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         }
         main li img {
             width: 60px;
             height: 60px;
             object-fit: cover;
             border-radius: 4px;
-            margin-right: 1rem;
-            border: 2px solid #5ef6ff;
+            margin-right: 1.5rem;
+            border: 2px solid #eabe6c;
             padding: 3px;
-            background: #23284a;
-            box-shadow: 0 0 0 1px #23284a;
+            background: #233048;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+        }
+        main li:hover img {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
         main li strong {
-            color: #fff;
+            color: #e8e1d3;
             font-weight: 700;
         }
         main li em {
-            color: #5ef6ff;
+            color: #eabe6c;
             font-style: italic;
         }
         main a {
-            color: #5ef6ff;
+            color: #eabe6c;
             text-decoration: none;
-            transition: color 0.2s;
+            transition: all 0.3s ease;
+            padding: 0.2rem 0.5rem;
+            border-radius: 3px;
         }
         main a:hover {
-            color: #fff;
+            color: #e8e1d3;
+            background: rgba(234, 190, 108, 0.2);
         }
         footer {
             text-align: center;
             padding: 2rem 1rem;
-            color: #fff;
-            background: #23284a;
-            border-top: 1px solid #5ef6ff;
-            margin-top: 3rem;
+            color: #e8e1d3;
+            background: linear-gradient(to right, #233048, #1c2333);
+            border-top: 2px solid #eabe6c;
+            box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
         }
     </style>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
