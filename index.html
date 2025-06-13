@@ -20,91 +20,91 @@
         body {
             font-family: 'Roboto', Arial, sans-serif;
             margin: 0;
-            background: #181c2b;
-            color: #fff;
+            background: #1c2333;
+            background-image: 
+                radial-gradient(#eabe6c15 1px, transparent 1px),
+                radial-gradient(#eabe6c15 1px, transparent 1px);
+            background-size: 50px 50px;
+            background-position: 0 0, 25px 25px;
+            background-attachment: fixed;
+            color: #e8e1d3;
             line-height: 1.6;
         }
         header {
-            background: #23284a;
+            background: linear-gradient(to right, #233048, #1c2333);
             padding: 2rem 1rem;
             text-align: center;
-            border-bottom: 1px solid #5ef6ff;
+            border-bottom: 2px solid #eabe6c;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
         header h1 {
             margin: 0 0 1rem 0;
-            font-size: 2rem;
+            font-size: 2.5rem;
             font-weight: 700;
-            color: #fff;
+            color: #eabe6c;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            letter-spacing: 1px;
+        }
+        header p {
+            margin: 0;
+            font-size: 1.2rem;
+            color: #e8e1d3;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+        .profile-pic {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #eabe6c;
+            padding: 5px;
+            background: rgba(35, 48, 72, 0.6);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+            filter: sepia(0.1);
+        }
+        .profile-pic:hover {
+            transform: scale(1.02);
+            filter: sepia(0);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+            border-color: #f0ca89;
         }
         .nav-link {
             display: inline-block;
             margin: 0.5rem;
-            padding: 0.5rem 1rem;
-            color: #5ef6ff;
+            padding: 0.8rem 1.5rem;
+            color: #e8e1d3;
             text-decoration: none;
             font-weight: 400;
-            transition: color 0.2s;
+            background: rgba(234, 190, 108, 0.1);
+            border: 1px solid #eabe6c;
+            border-radius: 3px;
+            transition: all 0.3s ease;
         }
         .nav-link:hover {
-            color: #fff;
+            background: #eabe6c;
+            color: #1c2333;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         main {
             max-width: 800px;
             margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        .intro {
-            background: #23284a;
             padding: 2rem;
-            border-radius: 4px;
-            border: 1px solid #5ef6ff;
-            margin-bottom: 2rem;
-        }
-        main h2 {
-            color: #5ef6ff;
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
-        .profile-section {
-            margin-bottom: 2rem;
-        }
-        .profile-section h3 {
-            color: #5ef6ff;
-            font-size: 1.2rem;
-            font-weight: 700;
-            margin: 1.5rem 0 1rem;
-            border-bottom: 1px solid #5ef6ff;
-            padding-bottom: 0.5rem;
-        }
-        .profile-section p {
-            margin: 0 0 1rem 0;
-        }
-        main a {
-            color: #5ef6ff;
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-        main a:hover {
-            color: #fff;
+            background: rgba(28, 35, 51, 0.95);
+            border: 1px solid #eabe6c;
+            border-radius: 8px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+            text-align: center;
         }
         footer {
             text-align: center;
             padding: 2rem 1rem;
-            color: #fff;
-            background: #23284a;
-            border-top: 1px solid #5ef6ff;
-            margin-top: 3rem;
-        }
-        .profile-pic {
-            width: 140px;
-            height: 140px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 2px solid #5ef6ff;
-            padding: 4px;
-            background: #23284a;
-            box-shadow: 0 0 0 1px #23284a;
+            color: #e8e1d3;
+            background: linear-gradient(to right, #233048, #1c2333);
+            border-top: 2px solid #eabe6c;
+            box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
@@ -120,6 +120,7 @@
                 <a class="github-link nav-link" href="publications.html">Publications</a>
                 <a class="github-link nav-link" href="notes.html" style="margin-left:1rem;">Notes</a>
                 <a class="github-link nav-link" href="https://github.com/BillyJay" target="_blank">GitHub</a>
+                <a class="github-link nav-link" href="https://www.linkedin.com/in/bhilahari-jeevanesan-7a416a236/" target="_blank">LinkedIn</a>
             </div>
         </div>
     </main>
